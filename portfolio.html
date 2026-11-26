@@ -33,14 +33,25 @@
             text-decoration: none;
             padding: 10px 10px;
             display: inline-block;
-            font-family: 'Sweet Dreams', 'Serif';
+            font-family: 'Happy Serif', 'Serif';
             font-size:larger;
 
         }
 
+        .bgvid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+
         @font-face {
-            font-family: "Sweet Dreams";
-            src: url(Fonts/Sweet\ Dreams.ttf);
+            font-family: "Happy Serif";
+            src: url(Fonts/Happy\ Serif.ttf);
         }
     </style>
 </head>
@@ -54,6 +65,12 @@
         </nav>
     </header>
 
+    <video class="bgvid" autoplay muted loop playsinline>
+        <source src="Videos/Homepage_BG.mp4" type="video/mp4">
+    </video>
 
+    <div class="wcmsg">
+        <h1> Welcome to Mackenzie's Dream</h1>
+    </div>
 </body>
 </html>
