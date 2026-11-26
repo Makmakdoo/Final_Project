@@ -18,7 +18,7 @@
 
             position: fixed;
             bottom: 25px;
-            left: 55%;
+            left: 51%;
             transform: translateX(-50%);
 
             backdrop-filter: blur(15px);
@@ -49,10 +49,25 @@
             pointer-events: none;
         }
 
+        .wcmsg{
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+            display: flex;
+            font-family: 'Pixels','Serif';
+            font-size:xxx-large;
+        }
+
+
         @font-face {
             font-family: "Happy Serif";
             src: url(Fonts/Happy\ Serif.ttf);
+            font-family: "Sweet Dreams";
+            src: url(Fonts/Sweet\ Dreams.ttf);
+            font-family: "Pixels";
+             src: url(Fonts/Pixelta.ttf);
         }
+
     </style>
 </head>
 <body>
@@ -70,7 +85,24 @@
     </video>
 
     <div class="wcmsg">
-        <h1> Welcome to Mackenzie's Dream</h1>
+
+        <svg viewBox="0 0 700 180" class="anmtn">
+
+            <text x="50%" y="65"
+            text-anchor="middle"
+            class="first">
+            Welcome to
+        </text>
+
+        <text x="50%" y="100"
+            text-anchor="middle"
+            class="second">
+            Dream World
+        </text>
+            
+        </svg>
     </div>
+
+
 </body>
 </html>
